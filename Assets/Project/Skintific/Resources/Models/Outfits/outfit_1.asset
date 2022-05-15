@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6db1820d8541a6acc2e61618b81400, type: 3}
+  m_Name: outfit_1
+  m_EditorClassIdentifier: 
+  id: outfit_1
+  minimumLevel: 1
+  price: 0
+  type: outfit
+  iconSprite: {fileID: 21300000, guid: bbce53382c7d7f14a835f8c9695271e6, type: 3}
+  skinSprite: {fileID: 21300000, guid: d7ab5637fe67b22478c0f609ba1b770d, type: 3}
