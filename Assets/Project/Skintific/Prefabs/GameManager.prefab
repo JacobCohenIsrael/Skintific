@@ -44,4 +44,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinsConfig: {fileID: 11400000, guid: b0b6d09b2d18f674cba0e086049f0e0f, type: 2}
+  playerCoins: {fileID: 11400000, guid: c06c3296ac83f2d429c362cde7d12229, type: 2}
+  playerLevel: {fileID: 11400000, guid: a23b3c2f865abb948b6baeba248f2592, type: 2}
   preloadEndedEvent: {fileID: 11400000, guid: bf265331aec25a942baf5586e49444e5, type: 2}

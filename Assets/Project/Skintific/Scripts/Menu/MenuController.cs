@@ -1,5 +1,5 @@
-﻿using System;
-using JCI.Core.Events;
+﻿using JCI.Core.Events;
+using Skintific.Player;
 using Skintific.Skins;
 using UnityEngine;
 
@@ -8,6 +8,7 @@ namespace Skintific.Menu
     public class MenuController : MonoBehaviour
     {
         [SerializeField] private SkinsConfig skinsConfig;
+        [SerializeField] private PlayerModel playerModel;
         [SerializeField] private GameEvent preloadEndedEvent;
 
         [SerializeField] private SkinPanel outfitsPanel;
@@ -63,7 +64,7 @@ namespace Skintific.Menu
         private void CreateAndSetMenuItem(SkinModel skinModel, MenuItem menuItemPrefab, Transform panelTransform)
         {
             var menuItem = Instantiate(menuItemPrefab, panelTransform);
-            menuItem.Set(skinModel);
+            menuItem.Set(skinModel, playerModel.HasSkin(skinModel.id), playerModel.Level);
         }
     }
 }

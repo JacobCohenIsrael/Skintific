@@ -127,6 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skinsConfig: {fileID: 11400000, guid: b0b6d09b2d18f674cba0e086049f0e0f, type: 2}
+  playerModel: {fileID: 11400000, guid: 5c911a23bbccaa64982f60461ac76021, type: 2}
   preloadEndedEvent: {fileID: 11400000, guid: bf265331aec25a942baf5586e49444e5, type: 2}
   outfitsPanel: {fileID: 4860581275104415692}
   mouthsPanel: {fileID: 6020829010654273846}

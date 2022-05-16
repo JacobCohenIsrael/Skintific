@@ -1,4 +1,6 @@
 ﻿using JCI.Core.Events;
+using JCI.Core.Models;
+using Skintific.Player;
 using Skintific.Skins;
 using UnityEngine;
 
@@ -7,11 +9,21 @@ namespace Project.Skintific.Scripts.Game
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private SkinsConfig skinsConfig;
+        [SerializeField] private LongVar playerCoins;
+        [SerializeField] private IntVar playerLevel;
         [SerializeField] private GameEvent preloadEndedEvent;
         private void Awake()
         {
             PopulateSkinsConfig();
+            InitializePlayer();
             preloadEndedEvent.Raise();
+        }
+
+        private void InitializePlayer()
+        {
+            var userData = UserDataGetter.GetUserData();
+            playerLevel.SetValue(userData.Level);
+            playerCoins.SetValue(userData.Coins);
         }
 
         private void PopulateSkinsConfig()

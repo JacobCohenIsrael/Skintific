@@ -8,7 +8,7 @@ namespace Skintific.Player
         {
             return new UserData
             {
-                Level = Random.Range(0, 8),
+                Level = Random.Range(1, 8),
                 Coins = Random.Range(50, 1500)
             };
         }
