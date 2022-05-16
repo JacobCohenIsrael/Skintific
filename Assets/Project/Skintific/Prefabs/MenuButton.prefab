@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 2834243852948169296}
   - component: {fileID: 2834243852948169299}
   - component: {fileID: 8022621286179627920}
+  - component: {fileID: 5955160492001572617}
+  - component: {fileID: 6536341292716163955}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -121,6 +123,33 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &5955160492001572617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834243852948169301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 843ae34ccd464d8dbe7cb2d0b1c7e667, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  button: {fileID: 8022621286179627920}
+--- !u!114 &6536341292716163955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2834243852948169301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41e7d015d01e4d74b4f25e1e0073c5b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tabButton: {fileID: 8022621286179627920}
+  tabPanel: {fileID: 0}
 --- !u!1 &2834243854363607279
 GameObject:
   m_ObjectHideFlags: 0

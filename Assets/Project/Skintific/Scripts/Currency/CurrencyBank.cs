@@ -4,7 +4,7 @@ namespace Project.Skintific.Scripts.Currency
 {
     public class CurrencyBank
     {
-        private readonly Dictionary<string, CurrencyHolder> _currencyHolders = new Dictionary<string, CurrencyHolder>();
+        private readonly Dictionary<string, CurrencyHolder> currencyHolders = new Dictionary<string, CurrencyHolder>();
 
         public void Add(string currencyType, long amountToAdd)
         {
@@ -14,10 +14,10 @@ namespace Project.Skintific.Scripts.Currency
 
         private CurrencyHolder GetCurrencyHolderByType(string type)
         {
-            if (_currencyHolders.ContainsKey(type)) return _currencyHolders[type];
+            if (currencyHolders.ContainsKey(type)) return currencyHolders[type];
             
             var currencyHolder = new CurrencyHolder(type, 0);
-            _currencyHolders.Add(type, currencyHolder);
+            currencyHolders.Add(type, currencyHolder);
             return currencyHolder;
 
         }
