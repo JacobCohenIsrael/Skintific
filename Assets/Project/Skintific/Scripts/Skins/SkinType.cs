@@ -1,4 +1,4 @@
-﻿namespace Project.Skintific.Scripts.Skins
+﻿namespace Skintific.Skins
 {
     public static class SkinType
     {

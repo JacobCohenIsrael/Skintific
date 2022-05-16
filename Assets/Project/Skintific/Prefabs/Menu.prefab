@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5311262684976069828}
   - component: {fileID: 5311262684976069829}
   m_Layer: 5
-  m_Name: ItemsFrame
+  m_Name: TabPanelsFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -85,6 +85,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5311262684976372346}
+  - component: {fileID: 1395639897609299481}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -113,6 +114,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 794, y: 622}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &1395639897609299481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5311262684976372347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26a779940d0940aa85eaeb09ba74ee06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skinsConfig: {fileID: 11400000, guid: b0b6d09b2d18f674cba0e086049f0e0f, type: 2}
+  preloadEndedEvent: {fileID: 11400000, guid: bf265331aec25a942baf5586e49444e5, type: 2}
+  outfitsPanel: {fileID: 4860581275104415692}
+  mouthsPanel: {fileID: 6020829010654273846}
+  eyesPanel: {fileID: 7817561342094282514}
+  outfitMenuItemPrefab: {fileID: 7951565313466965298, guid: 191a8ba3e47a3224392c013d5da3d684, type: 3}
+  mouthMenuItemPrefab: {fileID: 2299695981134313058, guid: a5479bc71473ddc439d2057c0d61134d, type: 3}
+  eyesMenuItemPrefab: {fileID: 6716249290872273353, guid: ee377207d02104e42ac4632b07e5c305, type: 3}
 --- !u!1 &5311262685310489726
 GameObject:
   m_ObjectHideFlags: 0
@@ -125,7 +146,7 @@ GameObject:
   - component: {fileID: 5311262685310489715}
   - component: {fileID: 5311262685310489712}
   m_Layer: 5
-  m_Name: TabsFrame
+  m_Name: TabButtonsFrame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -201,7 +222,7 @@ GameObject:
   - component: {fileID: 5311262685494852748}
   - component: {fileID: 5311262685494852746}
   m_Layer: 5
-  m_Name: Tabs
+  m_Name: TabButtonsLayout
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -273,7 +294,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5311262686448819550}
   m_Layer: 5
-  m_Name: ItemsContent
+  m_Name: TabPanelsContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -403,6 +424,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1913812920833663366, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
   m_PrefabInstance: {fileID: 4881997707978504466}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6020829010654273846 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174910746287298596, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
+  m_PrefabInstance: {fileID: 4881997707978504466}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3399aae67ded4722849f4b606e08d5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5311262685182235357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -717,6 +749,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1913812920833663366, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
   m_PrefabInstance: {fileID: 5997211353691838440}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4860581275104415692 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174910746287298596, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
+  m_PrefabInstance: {fileID: 5997211353691838440}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3399aae67ded4722849f4b606e08d5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7989425875713428383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -925,3 +968,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1913812920833663366, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
   m_PrefabInstance: {fileID: 8949656890810652470}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7817561342094282514 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1174910746287298596, guid: 2e0416f26f4d93547866a8c6aec7dfa0, type: 3}
+  m_PrefabInstance: {fileID: 8949656890810652470}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3399aae67ded4722849f4b606e08d5c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

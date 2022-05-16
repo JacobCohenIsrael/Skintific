@@ -1,7 +1,7 @@
 ﻿using JCI.Core.Inspector;
 using UnityEngine;
 
-namespace Project.Skintific.Scripts.Skins
+namespace Skintific.Skins
 {
     [CreateAssetMenu(menuName = "Skintific/Skins/Skin")]
     public class SkinModel : ScriptableObject
