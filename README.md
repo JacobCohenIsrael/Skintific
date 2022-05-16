@@ -5,7 +5,7 @@
 
 ### Known Issues:
 * Outfits are not yet perfect fit with the avatar
-
+* Minimum level and price is still unimplemented.
 
 
 ### Todo List:
