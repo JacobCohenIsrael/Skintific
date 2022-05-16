@@ -13,3 +13,4 @@
 * Menu button should have indication when it is the active tab.
 * Add opening animations
 * Add particle effects upon switching skin
+* Create TSV or CSV convertor to skins assets

@@ -38,7 +38,7 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigEye in skinsConfig.Eyes)
             {
-                CreateAndSetMenuItem(skinsConfigEye, eyesMenuItemPrefab, skinsConfigEye.iconSprite, eyesPanel.transform);
+                CreateAndSetMenuItem(skinsConfigEye, eyesMenuItemPrefab, eyesPanel.transform);
 
             }
         }
@@ -47,7 +47,7 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigMouth in skinsConfig.Mouths)
             {
-                CreateAndSetMenuItem(skinsConfigMouth, mouthMenuItemPrefab, skinsConfigMouth.iconSprite, mouthsPanel.transform);
+                CreateAndSetMenuItem(skinsConfigMouth, mouthMenuItemPrefab, mouthsPanel.transform);
 
             }
         }
@@ -56,14 +56,14 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigOutfit in skinsConfig.Outfits)
             {
-                CreateAndSetMenuItem(skinsConfigOutfit, outfitMenuItemPrefab, skinsConfigOutfit.iconSprite, outfitsPanel.transform);
+                CreateAndSetMenuItem(skinsConfigOutfit, outfitMenuItemPrefab, outfitsPanel.transform);
             }
         }
 
-        private void CreateAndSetMenuItem(SkinModel skinModel, MenuItem menuItemPrefab, Sprite iconSprite, Transform panelTransform)
+        private void CreateAndSetMenuItem(SkinModel skinModel, MenuItem menuItemPrefab, Transform panelTransform)
         {
             var menuItem = Instantiate(menuItemPrefab, panelTransform);
-            menuItem.Set(iconSprite);
+            menuItem.Set(skinModel);
         }
     }
 }

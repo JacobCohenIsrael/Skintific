@@ -609,8 +609,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2032224141}
+  - component: {fileID: 2032224142}
+  - component: {fileID: 2032224143}
   m_Layer: 0
-  m_Name: Character
+  m_Name: Avatar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -634,6 +636,50 @@ Transform:
   m_Father: {fileID: 2078676545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2032224142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032224140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16a5b8b29854ea2b52a33b23993af3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outfitSpriteRenderer: {fileID: 826641345}
+  mouthSpriteRenderer: {fileID: 1276351775}
+  eyesSpriteRenderer: {fileID: 1037814324}
+--- !u!114 &2032224143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032224140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5486c3a037043ffa13d54747fffaef8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 36b30543f6321ec499065939c7a1a299, type: 2}
+  alwaysListen: 0
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2032224142}
+        m_TargetAssemblyTypeName: Skintific.Avatar.AvatarController, Assembly-CSharp
+        m_MethodName: SetSkin
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &2078676545 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8354979566636638750, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
@@ -646,6 +692,54 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 189547084658099249, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547084658099249, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547084658099249, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547084658099249, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547085647582225, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547085647582225, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547085647582225, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 189547085647582225, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734856869387722099, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734856869387722099, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734856869387722099, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734856869387722099, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2734856869594758565, guid: c637b3ef2b697af4da3536ef0f583c2f, type: 3}
       propertyPath: m_RootOrder
       value: 1
