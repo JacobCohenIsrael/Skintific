@@ -1,5 +1,4 @@
-﻿using System;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 
 namespace Skintific.Player
@@ -13,7 +12,7 @@ namespace Skintific.Player
         private void Awake()
         {
             playerModel.coins.Updated += UpdateCoins;
-            playerModel.playerLevel.Updated += UpdateLevel;
+            playerModel.level.Updated += UpdateLevel;
         }
 
         private void Start()
@@ -25,7 +24,7 @@ namespace Skintific.Player
         private void OnDestroy()
         {
             playerModel.coins.Updated -= UpdateCoins;
-            playerModel.playerLevel.Updated -= UpdateLevel;
+            playerModel.level.Updated -= UpdateLevel;
         }
 
         private void UpdateCoins(long coins)

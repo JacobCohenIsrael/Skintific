@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: PlayerModel
   m_EditorClassIdentifier: 
   coins: {fileID: 11400000, guid: c06c3296ac83f2d429c362cde7d12229, type: 2}
-  playerLevel: {fileID: 11400000, guid: a23b3c2f865abb948b6baeba248f2592, type: 2}
+  level: {fileID: 11400000, guid: a23b3c2f865abb948b6baeba248f2592, type: 2}

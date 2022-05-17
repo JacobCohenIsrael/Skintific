@@ -1,16 +1,14 @@
 ﻿using JCI.Core.Events;
-using JCI.Core.Models;
 using Skintific.Player;
 using Skintific.Skins;
 using UnityEngine;
 
-namespace Project.Skintific.Scripts.Game
+namespace Skintific.Game
 {
     public class GameManager : MonoBehaviour
     {
         [SerializeField] private SkinsConfig skinsConfig;
-        [SerializeField] private LongVar playerCoins;
-        [SerializeField] private IntVar playerLevel;
+        [SerializeField] private PlayerModel playerModel;
         [SerializeField] private GameEvent preloadEndedEvent;
         
         private void Start()
@@ -23,8 +21,8 @@ namespace Project.Skintific.Scripts.Game
         private void InitializePlayer()
         {
             var userData = UserDataGetter.GetUserData();
-            playerLevel.SetAndNotify(userData.Level);
-            playerCoins.SetAndNotify(userData.Coins);
+            playerModel.level.SetAndNotify(userData.Level);
+            playerModel.coins.SetAndNotify(userData.Coins);
         }
 
         private void PopulateSkinsConfig()
