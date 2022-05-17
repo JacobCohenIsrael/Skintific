@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: eyes_2
   m_EditorClassIdentifier: 
   id: eyes_2
-  minimumLevel: 2
+  minimumLevel: 6
   price: 0
   type: eyes
   iconSprite: {fileID: 21300000, guid: 395dac690e6f32d4db7a846fb8749f67, type: 3}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: outfit_1
   m_EditorClassIdentifier: 
   id: outfit_1
-  minimumLevel: 1
+  minimumLevel: 5
   price: 0
   type: outfit
   iconSprite: {fileID: 21300000, guid: bbce53382c7d7f14a835f8c9695271e6, type: 3}

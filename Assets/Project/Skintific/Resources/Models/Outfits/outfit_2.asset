@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: outfit_2
   m_EditorClassIdentifier: 
   id: outfit_2
-  minimumLevel: 2
-  price: 50
+  minimumLevel: 5
+  price: 0
   type: outfit
   iconSprite: {fileID: 21300000, guid: 4459a33bb10f1b24a98744c9ab16f00b, type: 3}
   skinSprite: {fileID: 21300000, guid: c939b24c8b4b47f4a9d869739b9d0761, type: 3}
