@@ -10,11 +10,32 @@ namespace Skintific.Player
         [SerializeField] private TextMeshProUGUI levelText;
         [SerializeField] private TextMeshProUGUI coinsText;
 
+        private void Awake()
+        {
+            playerModel.coins.Updated += UpdateCoins;
+            playerModel.playerLevel.Updated += UpdateLevel;
+        }
 
         private void Start()
         {
-            levelText.text = playerModel.Level.ToString("N0");
-            coinsText.text = playerModel.Coins.ToString("N0");
+            UpdateLevel(playerModel.Level);
+            UpdateCoins(playerModel.Coins);
+        }
+
+        private void OnDestroy()
+        {
+            playerModel.coins.Updated -= UpdateCoins;
+            playerModel.playerLevel.Updated -= UpdateLevel;
+        }
+
+        private void UpdateCoins(long coins)
+        {
+            coinsText.text = coins.ToString("N0");
+        }
+
+        private void UpdateLevel(int level)
+        {
+            levelText.text = level.ToString("N0");
         }
     }
 }

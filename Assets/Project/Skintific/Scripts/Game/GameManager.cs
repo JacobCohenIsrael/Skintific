@@ -12,6 +12,7 @@ namespace Project.Skintific.Scripts.Game
         [SerializeField] private LongVar playerCoins;
         [SerializeField] private IntVar playerLevel;
         [SerializeField] private GameEvent preloadEndedEvent;
+        
         private void Start()
         {
             PopulateSkinsConfig();
@@ -22,8 +23,8 @@ namespace Project.Skintific.Scripts.Game
         private void InitializePlayer()
         {
             var userData = UserDataGetter.GetUserData();
-            playerLevel.SetValue(userData.Level);
-            playerCoins.SetValue(userData.Coins);
+            playerLevel.SetAndNotify(userData.Level);
+            playerCoins.SetAndNotify(userData.Coins);
         }
 
         private void PopulateSkinsConfig()

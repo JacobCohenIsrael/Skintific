@@ -7,8 +7,8 @@ namespace Skintific.Player
     [CreateAssetMenu(menuName = "Skintific/Player/PlayerModel", fileName = "PlayerModel")]
     public class PlayerModel : ScriptableObject
     {
-        [SerializeField] private LongVar coins;
-        [SerializeField] private IntVar playerLevel;
+        [SerializeField] public LongVar coins;
+        [SerializeField] public IntVar playerLevel;
 
         private Dictionary<string, bool> ownedSkins = new Dictionary<string, bool>();
         public int Level => playerLevel.value;
