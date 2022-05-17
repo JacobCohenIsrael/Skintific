@@ -12,7 +12,7 @@ namespace Project.Skintific.Scripts.Game
         [SerializeField] private LongVar playerCoins;
         [SerializeField] private IntVar playerLevel;
         [SerializeField] private GameEvent preloadEndedEvent;
-        private void Awake()
+        private void Start()
         {
             PopulateSkinsConfig();
             InitializePlayer();

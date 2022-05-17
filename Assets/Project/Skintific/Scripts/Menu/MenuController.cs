@@ -18,6 +18,7 @@ namespace Skintific.Menu
         [SerializeField] private MenuItem outfitMenuItemPrefab;
         [SerializeField] private MenuItem mouthMenuItemPrefab;
         [SerializeField] private MenuItem eyesMenuItemPrefab;
+        
         private void Awake()
         {
             preloadEndedEvent.RegisterListener(OnPreloadEnded);
