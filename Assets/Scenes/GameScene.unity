@@ -598,10 +598,6 @@ PrefabInstance:
       value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8169018561850271573, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: ab74c33f6550b8d459974b7a8ce6d6dc, type: 3}
-    - target: {fileID: 8169018561850271573, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
@@ -609,10 +605,6 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 8169018561850271573, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 8354979565729456448, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_SortingOrder
       value: 3
@@ -674,8 +666,28 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567821504414, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 24f966abcd051eb49a3285025d42ed11, type: 3}
+    - target: {fileID: 8354979567821504414, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_SortingOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354979567821504415, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354979567821504415, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354979567821504415, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354979567821504415, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.27
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}

@@ -18,3 +18,5 @@ MonoBehaviour:
   type: outfit
   iconSprite: {fileID: 21300000, guid: 8ee98bad214ad1042ab2bc136b78c47f, type: 3}
   skinSprite: {fileID: 21300000, guid: 24f966abcd051eb49a3285025d42ed11, type: 3}
+  skinOffset: {x: -0.06, y: 0.27, z: 0}
+  skinScale: {x: 1, y: 1, z: 1}

@@ -18,3 +18,5 @@ MonoBehaviour:
   type: eyes
   iconSprite: {fileID: 21300000, guid: f6ba5f3afcd251b47a37b2b3c26efea2, type: 3}
   skinSprite: {fileID: 21300000, guid: a379e6cec881dc1499fb312995c1bbc9, type: 3}
+  skinOffset: {x: 0, y: 1.91, z: 0}
+  skinScale: {x: 1, y: 1, z: 1}

@@ -1,4 +1,5 @@
-﻿using Skintific.Skins;
+﻿using System;
+using Skintific.Skins;
 using UnityEngine;
 
 namespace Skintific.Avatar
@@ -11,21 +12,33 @@ namespace Skintific.Avatar
 
         public void SetSkin(SkinModel skinModel)
         {
-            switch (skinModel.type)
+            var spriteRenderer = GetSpriteRendererByType(skinModel.type);
+            spriteRenderer.sprite = skinModel.skinSprite;
+            var spriteRendererTransform = spriteRenderer.transform;
+            spriteRendererTransform.localPosition = skinModel.skinOffset;
+            spriteRendererTransform.localScale = skinModel.skinScale;
+        }
+
+        private SpriteRenderer GetSpriteRendererByType(string type)
+        {
+            SpriteRenderer spriteRenderer;
+
+            switch (type)
             {
                 case SkinType.Outfit:
-                    outfitSpriteRenderer.sprite = skinModel.skinSprite;
+                    spriteRenderer = outfitSpriteRenderer;
                     break;
                 case SkinType.Mouth:
-                    mouthSpriteRenderer.sprite = skinModel.skinSprite;
+                    spriteRenderer = mouthSpriteRenderer;
                     break;
                 case SkinType.Eyes:
-                    eyesSpriteRenderer.sprite = skinModel.skinSprite;
+                    spriteRenderer = eyesSpriteRenderer;
                     break;
                 default:
-                    Debug.LogWarning($"Unsupported avatar skin type ${skinModel.type}");
-                    break;
+                    throw new Exception($"Unsupported avatar skin type ${type}");
             }
+
+            return spriteRenderer;
         }
     }
 }

@@ -14,5 +14,7 @@ namespace Skintific.Skins
         public string type;
         public Sprite iconSprite;
         public Sprite skinSprite;
+        public Vector3 skinOffset = Vector3.zero;
+        public Vector3 skinScale = Vector3.one;
     }
 }
