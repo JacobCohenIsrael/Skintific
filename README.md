@@ -4,7 +4,7 @@
 
 
 ### Known Issues:
-* Outfits are not yet perfect fit with the avatar
+* ~~Outfits are not yet perfect fit with the avatar~~
 * ~~Minimum level and price is still unimplemented.~~
 
 
@@ -21,8 +21,13 @@
     * When level requirement is not met
     * Prompt when buying a skin?
 
-### Constrains:
-* Tested on PC only
+### Disclaimer:
+* Tested on PC and Mac
 * Tested in Landscape Ratio
 * Tested with 16:9 16:10 and 18:10 ratio (multiple resolutions)
+
+
+### Constrains
 * May require DoTween initial setup
+* TextMeshPro required
+* Requires promises support.
