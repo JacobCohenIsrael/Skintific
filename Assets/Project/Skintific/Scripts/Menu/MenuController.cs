@@ -5,6 +5,7 @@ using UnityEngine;
 
 namespace Skintific.Menu
 {
+    [RequireComponent(typeof(Animator))]
     public class MenuController : MonoBehaviour
     {
         [SerializeField] private SkinsConfig skinsConfig;
@@ -18,6 +19,9 @@ namespace Skintific.Menu
         [SerializeField] private MenuItem outfitMenuItemPrefab;
         [SerializeField] private MenuItem mouthMenuItemPrefab;
         [SerializeField] private MenuItem eyesMenuItemPrefab;
+
+
+        [SerializeField] private string entryTrigger = "Entry";
         
         private void Awake()
         {
@@ -27,6 +31,7 @@ namespace Skintific.Menu
         private void OnPreloadEnded()
         {
             PopulateMenu();
+            GetComponent<Animator>().SetTrigger(entryTrigger);
         }
 
         private void PopulateMenu()
