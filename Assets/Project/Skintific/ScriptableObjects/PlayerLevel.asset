@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbb712d34a3cf74418fde700b0b6b294, type: 3}
   m_Name: PlayerLevel
   m_EditorClassIdentifier: 
-  value: 2
+  value: 3
   defaultValue: 0
