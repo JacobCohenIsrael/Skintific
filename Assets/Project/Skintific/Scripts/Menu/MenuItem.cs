@@ -19,7 +19,7 @@ namespace Skintific.Menu
         [SerializeField] private Image priceIndicator;
         [SerializeField] private TextMeshProUGUI priceText;
         [SerializeField] private Image lockIndicator;
-        
+
         private SkinModel skinModel;
 
         public void Set(SkinModel skinModel, bool isOwned, int playerLevel)

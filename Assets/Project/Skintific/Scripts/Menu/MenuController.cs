@@ -22,6 +22,7 @@ namespace Skintific.Menu
 
 
         [SerializeField] private string entryTrigger = "Entry";
+        [SerializeField] private string openState = "OpenState";
         
         private void Awake()
         {
@@ -30,8 +31,8 @@ namespace Skintific.Menu
 
         private void OnPreloadEnded()
         {
-            PopulateMenu();
-            GetComponent<Animator>().SetTrigger(entryTrigger);
+            GetComponent<Animator>().TriggerAndWaitForState(entryTrigger, openState)
+                .Then(PopulateMenu);
         }
 
         private void PopulateMenu()
@@ -46,7 +47,6 @@ namespace Skintific.Menu
             foreach (var skinsConfigEye in skinsConfig.Eyes)
             {
                 CreateAndSetMenuItem(skinsConfigEye, eyesMenuItemPrefab, eyesPanel.transform);
-
             }
         }
 
@@ -55,7 +55,6 @@ namespace Skintific.Menu
             foreach (var skinsConfigMouth in skinsConfig.Mouths)
             {
                 CreateAndSetMenuItem(skinsConfigMouth, mouthMenuItemPrefab, mouthsPanel.transform);
-
             }
         }
 

@@ -15,6 +15,7 @@
 * Add opening animations
 * Add particle effects upon switching skin
 * Create TSV or CSV convertor to skins assets
+* Create Database abstraction and use player prefs to save user state
 * Add better font
 * Add popups (or some sort of indication) to UI when player trys changing skin
     * When not enough coins when attempt to buy a skin
