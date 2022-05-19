@@ -17,6 +17,7 @@
 * Create TSV or CSV convertor to skins assets
 * Create Database abstraction and use player prefs to save user state
 * Add better font
+* Finish adding content (outfit & mouth & eyes 1-12 + Adjustments)
 * Add popups (or some sort of indication) to UI when player trys changing skin
     * When not enough coins when attempt to buy a skin
     * When level requirement is not met

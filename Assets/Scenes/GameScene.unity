@@ -658,20 +658,12 @@ PrefabInstance:
       value: 0.83
       objectReference: {fileID: 0}
     - target: {fileID: 8169018561850271573, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8169018561850271573, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8354979565729456448, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354979565729456448, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_SortingOrder
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8354979565729456448, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_WasSpriteAssigned
@@ -730,24 +722,20 @@ PrefabInstance:
       value: WorldRoot
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567613247083, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_Sprite
-      value: 
+      propertyPath: m_Size.x
+      value: 1.66
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567613247083, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_SortingOrder
-      value: 2
+      propertyPath: m_Size.y
+      value: 0.88
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567613247083, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_WasSpriteAssigned
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567821504414, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8354979567821504414, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
-      propertyPath: m_SortingOrder
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8354979567821504414, guid: fac237e1c32aeba4ba60e749c8191b22, type: 3}
       propertyPath: m_WasSpriteAssigned

@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c6db1820d8541a6acc2e61618b81400, type: 3}
-  m_Name: eyes_3
+  m_Name: eyes_4
   m_EditorClassIdentifier: 
-  id: eyes_3
+  id: eyes_4
   minimumLevel: 1
-  price: 700
+  price: 0
   type: eyes
-  iconSprite: {fileID: 21300000, guid: f6ba5f3afcd251b47a37b2b3c26efea2, type: 3}
-  skinSprite: {fileID: 21300000, guid: a379e6cec881dc1499fb312995c1bbc9, type: 3}
+  iconSprite: {fileID: 21300000, guid: 63a0c02c8673a2b409cb10192d5fe32f, type: 3}
+  skinSprite: {fileID: 21300000, guid: 24df0ecc6eda921499a4007411a9205f, type: 3}
   skinOffset: {x: 0, y: 1.91, z: 0}
   skinScale: {x: 1, y: 1, z: 1}

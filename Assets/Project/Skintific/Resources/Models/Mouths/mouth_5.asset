@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c6db1820d8541a6acc2e61618b81400, type: 3}
-  m_Name: eyes_3
+  m_Name: mouth_5
   m_EditorClassIdentifier: 
-  id: eyes_3
-  minimumLevel: 1
-  price: 700
-  type: eyes
-  iconSprite: {fileID: 21300000, guid: f6ba5f3afcd251b47a37b2b3c26efea2, type: 3}
-  skinSprite: {fileID: 21300000, guid: a379e6cec881dc1499fb312995c1bbc9, type: 3}
-  skinOffset: {x: 0, y: 1.91, z: 0}
+  id: mouth_5
+  minimumLevel: 4
+  price: 0
+  type: mouth
+  iconSprite: {fileID: 21300000, guid: 679cb7b4ac30de04cb2cd2ec40dd451d, type: 3}
+  skinSprite: {fileID: 21300000, guid: 25789b35bef53394aa00c90a7383dd8c, type: 3}
+  skinOffset: {x: 0, y: 1.51, z: 0}
   skinScale: {x: 1, y: 1, z: 1}
