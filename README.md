@@ -11,7 +11,8 @@
 ### Todo List:
 * Switch to currency instead of using hardcoded coins as price.
 * Menu button should have indication when it is the active tab.
-* Menu Panels should show the active choice for that specific panel
+* ~~Menu Panels should show the active choice for that specific panel~~
+    * Do it for each panel individually
 * Add opening animations
 * Add particle effects upon switching skin
 * Create TSV or CSV convertor to skins assets

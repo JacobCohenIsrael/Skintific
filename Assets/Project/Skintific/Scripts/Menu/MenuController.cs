@@ -23,7 +23,8 @@ namespace Skintific.Menu
 
         [SerializeField] private string entryTrigger = "Entry";
         [SerializeField] private string openState = "OpenState";
-        
+        private MenuItem activeMenuItem;
+
         private void Awake()
         {
             preloadEndedEvent.RegisterListener(OnPreloadEnded);
@@ -70,6 +71,16 @@ namespace Skintific.Menu
         {
             var menuItem = Instantiate(menuItemPrefab, panelTransform);
             menuItem.Set(skinModel, playerModel.HasSkin(skinModel.id), playerModel.Level);
+            menuItem.OnSelect += OnMenuItemSelected;
+        }
+
+        private void OnMenuItemSelected(MenuItem menuItem)
+        {
+            if (activeMenuItem != null && menuItem != activeMenuItem)
+            {
+                activeMenuItem.Unselect();
+            }
+            activeMenuItem = menuItem;
         }
     }
 }

@@ -4,6 +4,7 @@ using Skintific.Player;
 using Skintific.Skins;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 namespace Skintific.Menu
@@ -19,15 +20,26 @@ namespace Skintific.Menu
         [SerializeField] private Image priceIndicator;
         [SerializeField] private TextMeshProUGUI priceText;
         [SerializeField] private Image lockIndicator;
+        
+        [SerializeField] private Image backgroundImage;
+        [SerializeField] private Color selectedColor;
 
+        public UnityAction<MenuItem> OnSelect;
+        
         private SkinModel skinModel;
-
+        private Color originalBackgroundColor;
+        
         public void Set(SkinModel skinModel, bool isOwned, int playerLevel)
         {
             this.skinModel = skinModel;
             icon.sprite = skinModel.iconSprite;
 
             SetIndicators(isOwned, playerLevel);
+        }
+        
+        public void Unselect()
+        {
+            backgroundImage.color = originalBackgroundColor;
         }
 
         private void SetIndicators(bool isOwned, int playerLevel)
@@ -56,6 +68,7 @@ namespace Skintific.Menu
 
         private void Awake()
         {
+            originalBackgroundColor = backgroundImage.color;
             button.onClick.AddListener(OnClick);
             playerModel.level.Updated += OnLevelUpdate;
         }
@@ -108,6 +121,8 @@ namespace Skintific.Menu
             }
             
             changeSkinEvent.Raise(skinModel);
+            backgroundImage.color = selectedColor;
+            OnSelect.Invoke(this);
         }
     }
 }
