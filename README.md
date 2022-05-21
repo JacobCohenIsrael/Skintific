@@ -6,19 +6,19 @@
 ### Known Issues:
 * ~~Outfits are not yet perfect fit with the avatar~~
 * ~~Minimum level and price is still unimplemented.~~
-
+* Inactive panels do not update on enable when level / coin change.
 
 ### Todo List:
 * Switch to currency instead of using hardcoded coins as price.
 * Menu button should have indication when it is the active tab.
 * ~~Menu Panels should show the active choice for that specific panel~~
-    * Do it for each panel individually
+    * ~~Do it for each panel individually~~
 * Add opening animations
 * Add particle effects upon switching skin
 * Create TSV or CSV convertor to skins assets
 * Create Database abstraction and use player prefs to save user state
 * Add better font
-* Finish adding content (outfit & mouth & eyes 1-12 + Adjustments)
+* ~~Finish adding content (outfit & mouth & eyes 1-12 + Adjustments)~~
 * Add popups (or some sort of indication) to UI when player trys changing skin
     * When not enough coins when attempt to buy a skin
     * When level requirement is not met

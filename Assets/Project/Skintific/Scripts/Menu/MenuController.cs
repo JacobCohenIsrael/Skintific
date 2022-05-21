@@ -1,5 +1,4 @@
 ﻿using JCI.Core.Events;
-using Skintific.Player;
 using Skintific.Skins;
 using UnityEngine;
 
@@ -9,7 +8,6 @@ namespace Skintific.Menu
     public class MenuController : MonoBehaviour
     {
         [SerializeField] private SkinsConfig skinsConfig;
-        [SerializeField] private PlayerModel playerModel;
         [SerializeField] private GameEvent preloadEndedEvent;
 
         [SerializeField] private SkinPanel outfitsPanel;
@@ -23,7 +21,6 @@ namespace Skintific.Menu
 
         [SerializeField] private string entryTrigger = "Entry";
         [SerializeField] private string openState = "OpenState";
-        private MenuItem activeMenuItem;
 
         private void Awake()
         {
@@ -47,7 +44,7 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigEye in skinsConfig.Eyes)
             {
-                CreateAndSetMenuItem(skinsConfigEye, eyesMenuItemPrefab, eyesPanel.transform);
+                eyesPanel.CreateAndSetMenuItem(skinsConfigEye, eyesMenuItemPrefab);
             }
         }
 
@@ -55,7 +52,7 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigMouth in skinsConfig.Mouths)
             {
-                CreateAndSetMenuItem(skinsConfigMouth, mouthMenuItemPrefab, mouthsPanel.transform);
+                mouthsPanel.CreateAndSetMenuItem(skinsConfigMouth, mouthMenuItemPrefab);
             }
         }
 
@@ -63,24 +60,8 @@ namespace Skintific.Menu
         {
             foreach (var skinsConfigOutfit in skinsConfig.Outfits)
             {
-                CreateAndSetMenuItem(skinsConfigOutfit, outfitMenuItemPrefab, outfitsPanel.transform);
+                outfitsPanel.CreateAndSetMenuItem(skinsConfigOutfit, outfitMenuItemPrefab);
             }
-        }
-
-        private void CreateAndSetMenuItem(SkinModel skinModel, MenuItem menuItemPrefab, Transform panelTransform)
-        {
-            var menuItem = Instantiate(menuItemPrefab, panelTransform);
-            menuItem.Set(skinModel, playerModel.HasSkin(skinModel.id), playerModel.Level);
-            menuItem.OnSelect += OnMenuItemSelected;
-        }
-
-        private void OnMenuItemSelected(MenuItem menuItem)
-        {
-            if (activeMenuItem != null && menuItem != activeMenuItem)
-            {
-                activeMenuItem.Unselect();
-            }
-            activeMenuItem = menuItem;
         }
     }
 }

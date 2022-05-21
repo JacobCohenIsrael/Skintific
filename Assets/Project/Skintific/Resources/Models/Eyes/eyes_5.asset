@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6db1820d8541a6acc2e61618b81400, type: 3}
+  m_Name: eyes_5
+  m_EditorClassIdentifier: 
+  id: eyes_5
+  minimumLevel: 1
+  price: 0
+  type: eyes
+  iconSprite: {fileID: 21300000, guid: 562184a069ee7eb4db8ba27716a4f3df, type: 3}
+  skinSprite: {fileID: 21300000, guid: 983251f1dab4f454383484519cf5036a, type: 3}
+  skinOffset: {x: 0, y: 1.91, z: 0}
+  skinScale: {x: 1, y: 1, z: 1}
